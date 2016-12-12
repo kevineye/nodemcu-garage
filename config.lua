@@ -1,5 +1,6 @@
 MAIN_FILES = {
-    "garage.lua"
+    "garage.lua",
+    "sensors.lua"
 }
 
 PIN_LED         = 4
