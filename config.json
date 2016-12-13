@@ -6,5 +6,6 @@
   "mqtt_host": "-",
   "mqtt_port": 1883,
   "mqtt_user": "-",
-  "mqtt_password": "-"
+  "mqtt_password": "-",
+  "zone": 1
 }
