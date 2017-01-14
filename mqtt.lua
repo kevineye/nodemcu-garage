@@ -42,7 +42,7 @@ mqtt_cb.message = function(m, t, pl)
 end
 
 function sendstatus()
-    local msg = '{"status":"online","ip":"' .. wifi.sta.getip() .. '","heap":' .. node.heap() .. ',"minutesOnline":' .. math.floor(tmr.now() / 60000000) .. '}'
+    local msg = '{"status":"online","ip":"' .. wifi.sta.getip() .. '","heap":' .. node.heap() .. ',"minutesOnline":' .. math.floor(tmr.time() / 60) .. '}'
     print("Sending " .. config.mqtt_prefix .. "/status " .. msg)
     m:publish(config.mqtt_prefix .. "/status", msg, 0, 1)
 end
