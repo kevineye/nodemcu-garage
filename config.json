@@ -1,11 +1,12 @@
 {
-  "wifi_ssid": "-",
-  "wifi_password": "-",
-  "mqtt_prefix": "home/garage",
-  "mqtt_clientid": "garage",
-  "mqtt_host": "-",
+  "hostname": "garage-test",
+  "wifi_ssid": "EyeFi",
+  "wifi_password": "scoobysnack01",
+  "mqtt_prefix": "home/garage-test",
+  "mqtt_clientid": "garage-test",
+  "mqtt_host": "192.168.1.110",
   "mqtt_port": 1883,
-  "mqtt_user": "-",
-  "mqtt_password": "-",
+  "mqtt_user": "device",
+  "mqtt_password": "6oq0zXODy#8D",
   "zone": 1
 }
