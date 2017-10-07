@@ -5,8 +5,7 @@ SRC_FILES := \
     lib/mqtt-connect.lua \
     lib/ready.lua \
     lib/telnet.lua \
-    lib/sensors.lua \
-    lib/sensors-read.lua \
+    sensors-simplified.lua \
     lib/wifi-connect.lua \
     app.lua \
     garage.lua \

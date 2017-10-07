@@ -10,13 +10,17 @@ garage.is_open      = false
 
 m.onConnect(function(client)
     client:subscribe(m.prefix .. "/door/toggle", 0)
+    client:subscribe(m.prefix .. "/door/open", 0)
+    client:subscribe(m.prefix .. "/door/close", 0)
     garage.publishopen()
 end)
 
 m.onMessage(function(_, t, pl)
     if pl == nil then pl = "" end
     log.log(7, MODULE, "got " .. pl .. " " .. t)
-    if (t == m.prefix .. "/door/toggle") then
+    if (t == m.prefix .. "/door/open" and not garage.is_open)
+    or (t == m.prefix .. "/door/close" and garage.is_open)
+    or (t == m.prefix .. "/door/toggle") then
         garage.toggleopen()
     end
 end)

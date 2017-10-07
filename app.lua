@@ -11,7 +11,7 @@ local app = {}
 function app.run()
     require 'telnet'
     require 'mqtt-connect'
-    local sensors = require 'sensors'
+    local sensors = require 'sensors-simplified'
     sensors.DHT_PIN             = 2
     sensors.LIGHT_PIN           = 0
     require 'garage'
